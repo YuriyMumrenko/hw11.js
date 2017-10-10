@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="задачи на применение jQuery "> 
+  <title>#hw11.js</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link id="main_css" rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+
+      <h2> hw № 11 - LocalStorage -  </h2><hr>
+      <h3> Задание 1. </h3> 
+      <p>  Напишите программу, которая проверяет поддержку localStorage в браузере. Результат проверки выведите в консоль. 
+
+      </p> <br>
+      <button class="enter enter_Task1"> Результат </button> 
+      <div class="output output1"></div> 
+      <hr>
+      <h3> Задание 2. </h3> 
+      <p> Создайте HTML страницу и два варианта оформления, которые размещены в разных css файлах. На странице сделайте переключатель тем оформления. При выборе оформления – происходит подключение соответствующего файла CSS. Запишите в localStorage выбранную тему оформления. При обновлении страницы загружайте ранее выбранную тему. 
+      </p> <br>
+      <label> тема оформления 1 <input type="radio" name="topic" id="topicOne" value="one"></label>
+      <label> тема оформления 2 <input type="radio" name="topic" id="topicTwo" value="two"></label>
+      <hr>
+      <h3> Задание 3. </h3> 
+      <p>  Создайте массив, сохраните его в localStorage. Считайте массив из localStorage, выведите его на экран. 
+      </p> <br>
+      <button class="enter enter_Task3"> Результат </button> 
+      <div class="output output3"></div> 
+      <hr>
+      <h3> Задание 4. </h3> 
+      <p>  Создайте окно, которое всплывает через 4 секунды после загрузки страницы. В окне – опция «Согласен». Если пользователь выбирает данную опцию и закрывает окно – то при последующих обновлениях окно не показывается. Если пользователь не выбрал опцию «Согласен», то повторяйте вывод окна после загрузки. 
+      </p> 
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id = "modal-yes-btn">Согласен</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+      <h3> Задание 5. </h3> 
+      
+      <p>Напишите скрипт, который выводит все содержимое localStorage.</p><br>
+      <button class="enter enter_Task5"> Результат </button> 
+      <div class="output output5"></div> 
+      <hr>
+      
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/hw11.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
